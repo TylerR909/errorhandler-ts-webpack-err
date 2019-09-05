@@ -1,0 +1,21 @@
+{
+  "name": "errorhandler-ts-webpack-err",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --config webpack.dev.js",
+    "start": "node dist/bundle.js",
+    "test": "npm run build && npm start"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "typescript": "^3.6.2",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  },
+  "dependencies": {
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1"
+  }
+}
