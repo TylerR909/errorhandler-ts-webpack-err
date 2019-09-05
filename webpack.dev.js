@@ -3,18 +3,10 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   target: 'node',
-  entry: './src/index.ts',
+  entry: './src/index.js',
   devtool: 'inline-source-map',
-  module: {
-    rules: [
-      {
-        test: /\.ts$/,
-        use: 'awesome-typescript-loader'
-      }
-    ]
-  },
   resolve: {
-    extensions: ['.ts', '.js' ]
+    extensions: ['.js' ]
   },
   output: {
     filename: 'bundle.js',
